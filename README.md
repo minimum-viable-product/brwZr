@@ -6,9 +6,11 @@ A minimalist web browser.
 Compile:
 
 ```
-MINGW/$ gcc -o window.exe window.c -lgdi32 -Wl,--subsystem,windows
+$ make
+$ make clean
 
-MSVC:\> cl gdi32.lib user32.lib window.c /link /subsystem:windows
+> nmake
+> nmake clean
 ```
 
 ---
