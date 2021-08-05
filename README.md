@@ -1,4 +1,4 @@
-# brwoser
+# brwZr
 
 A minimalist web browser.
 
