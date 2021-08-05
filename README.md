@@ -1,4 +1,4 @@
-# webby
+# brwoser
 
 A minimalist web browser.
 
