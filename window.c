@@ -55,7 +55,7 @@ INT WINAPI wWinMain(HINSTANCE hInst,
 
     hWnd = CreateWindowExW(WS_EX_CLIENTEDGE,     /* extended window style */
                            L"WndClass",          /* class atom            */
-                           L"Window Title",      /* window title          */
+                           L"brwZr",             /* window title          */
                            WS_OVERLAPPEDWINDOW,  /* style of the window   */
                            rect.left+15,         /* X (upper-left corner) */
                            rect.top+15,          /* Y (upper-left corner) */
