@@ -42,8 +42,10 @@ INT WINAPI wWinMain(HINSTANCE hInst,
     wcx.cbSize        = sizeof (wcx);
 
     if (!RegisterClassExW(&wcx)) {
-        MessageBoxW(NULL, L"Failed to register window class.", NULL,
-                   MB_ICONEXCLAMATION);
+        MessageBoxW(NULL,
+                    L"Failed to register window class.",
+                    NULL,
+                    MB_ICONEXCLAMATION);
         return FALSE;
     }
 
@@ -63,7 +65,10 @@ INT WINAPI wWinMain(HINSTANCE hInst,
                            NULL);
 
     if (hWnd == NULL) {
-        MessageBoxW(NULL, L"Failed to create window.", NULL, MB_ICONEXCLAMATION);
+        MessageBoxW(NULL,
+                    L"Failed to create window.",
+                    NULL,
+                    MB_ICONEXCLAMATION);
         return FALSE;
     }
 
