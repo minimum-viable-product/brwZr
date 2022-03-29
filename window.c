@@ -1,5 +1,6 @@
 #include <windows.h>
 
+
 LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
     switch (uMsg) {
@@ -17,6 +18,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
     return 0;
 }
+
 
 INT WINAPI wWinMain(HINSTANCE hInst,
                     HINSTANCE hPrevInst,
