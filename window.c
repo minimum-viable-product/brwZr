@@ -12,23 +12,23 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
             break;
 
         default:
-            return DefWindowProc(hWnd, uMsg, wParam, lParam);
+            return DefWindowProcW(hWnd, uMsg, wParam, lParam);
     }
 
     return 0;
 }
 
-int WINAPI WinMain(HINSTANCE hInst,
-                   HINSTANCE hPrevInst,
-                   LPSTR lpCmdLine,
-                   int iCmdShow)
+INT WINAPI wWinMain(HINSTANCE hInst,
+                    HINSTANCE hPrevInst,
+                    LPSTR lpCmdLine,
+                    int iCmdShow)
 {
-    WNDCLASSEX wcx;
+    WNDCLASSEXW wcx;
     HWND hWnd;
     MSG  msg;
     RECT rect;
 
-    wcx.lpszClassName = "WndClass";
+    wcx.lpszClassName = L"WndClass";
     wcx.lpfnWndProc   = WndProc;
     wcx.hInstance     = hInst;
     wcx.hCursor       = NULL;
@@ -41,29 +41,29 @@ int WINAPI WinMain(HINSTANCE hInst,
     wcx.cbWndExtra    = 0;
     wcx.cbSize        = sizeof (wcx);
 
-    if (!RegisterClassEx(&wcx)) {
-        MessageBox(NULL, "Failed to register window class.", NULL,
+    if (!RegisterClassExW(&wcx)) {
+        MessageBoxW(NULL, L"Failed to register window class.", NULL,
                    MB_ICONEXCLAMATION);
         return FALSE;
     }
 
     SystemParametersInfo(SPI_GETWORKAREA, 0, &rect, 0);
 
-    hWnd = CreateWindowEx(WS_EX_CLIENTEDGE,
-                          "WndClass",
-                          "Window Title",
-                          WS_OVERLAPPEDWINDOW,
-                          rect.left+15,
-                          rect.top+15,
-                          rect.right-30,
-                          rect.bottom-60,
-                          NULL,
-                          NULL,
-                          hInst,
-                          NULL);
+    hWnd = CreateWindowExW(WS_EX_CLIENTEDGE,
+                           L"WndClass",
+                           L"Window Title",
+                           WS_OVERLAPPEDWINDOW,
+                           rect.left+15,
+                           rect.top+15,
+                           rect.right-30,
+                           rect.bottom-60,
+                           NULL,
+                           NULL,
+                           hInst,
+                           NULL);
 
     if (hWnd == NULL) {
-        MessageBox(NULL, "Failed to create window.", NULL, MB_ICONEXCLAMATION);
+        MessageBoxW(NULL, L"Failed to create window.", NULL, MB_ICONEXCLAMATION);
         return FALSE;
     }
 
