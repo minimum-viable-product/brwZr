@@ -53,18 +53,18 @@ INT WINAPI wWinMain(HINSTANCE hInst,
 
     SystemParametersInfo(SPI_GETWORKAREA, 0, &rect, 0);
 
-    hWnd = CreateWindowExW(WS_EX_CLIENTEDGE,
-                           L"WndClass",
-                           L"Window Title",
-                           WS_OVERLAPPEDWINDOW,
-                           rect.left+15,
-                           rect.top+15,
-                           rect.right-30,
-                           rect.bottom-60,
-                           NULL,
-                           NULL,
-                           hInst,
-                           NULL);
+    hWnd = CreateWindowExW(WS_EX_CLIENTEDGE,     /* extended window style */
+                           L"WndClass",          /* class atom            */
+                           L"Window Title",      /* window title          */
+                           WS_OVERLAPPEDWINDOW,  /* style of the window   */
+                           rect.left+15,         /* X (upper-left corner) */
+                           rect.top+15,          /* Y (upper-left corner) */
+                           rect.right-30,        /* width                 */
+                           rect.bottom-60,       /* height                */
+                           NULL,                 /* handle to parent      */
+                           NULL,                 /* handle to menu        */
+                           hInst,                /* handle to instance    */
+                           NULL);                /* additional data       */
 
     if (hWnd == NULL) {
         MessageBoxW(NULL,
