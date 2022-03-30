@@ -20,15 +20,18 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 }
 
 
-INT WINAPI wWinMain(HINSTANCE hInst,
-                    HINSTANCE hPrevInst,
-                    LPWSTR lpCmdLine,
-                    int iCmdShow)
+INT WINAPI WinMain(HINSTANCE hInst,
+                   HINSTANCE hPrevInst,
+                   LPSTR lpCmdLine,
+                   int iCmdShow)
 {
     WNDCLASSEXW wndclass;
     HWND hWnd;
-    MSG  msg;
+    MSG msg;
     RECT rect;
+
+    /* Get args as wide characters for old mingw/gcc compatibility */
+    LPWSTR lpwsCmdLine = GetCommandLineW();
 
     wndclass.lpszClassName = L"WndClass";
     wndclass.lpfnWndProc   = WndProc;
