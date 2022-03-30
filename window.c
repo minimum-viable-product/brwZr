@@ -27,7 +27,7 @@ INT WINAPI WinMain(HINSTANCE hInst,
 {
     WNDCLASSEXW wndclass;
     HWND hWnd;
-    MSG msg;
+    MSG  msg;
     RECT rect;
 
     /* Get args as wide characters for old mingw/gcc compatibility */
