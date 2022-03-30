@@ -22,28 +22,28 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 INT WINAPI wWinMain(HINSTANCE hInst,
                     HINSTANCE hPrevInst,
-                    LPSTR lpCmdLine,
+                    LPWSTR lpCmdLine,
                     int iCmdShow)
 {
-    WNDCLASSEXW wcx;
+    WNDCLASSEXW wndclass;
     HWND hWnd;
     MSG  msg;
     RECT rect;
 
-    wcx.lpszClassName = L"WndClass";
-    wcx.lpfnWndProc   = WndProc;
-    wcx.hInstance     = hInst;
-    wcx.hCursor       = NULL;
-    wcx.hIcon         = NULL;
-    wcx.hIconSm       = NULL;
-    wcx.hbrBackground = GetStockObject(DKGRAY_BRUSH);
-    wcx.lpszMenuName  = NULL;
-    wcx.style         = CS_HREDRAW | CS_VREDRAW | CS_PARENTDC;
-    wcx.cbClsExtra    = 0;
-    wcx.cbWndExtra    = 0;
-    wcx.cbSize        = sizeof (wcx);
+    wndclass.lpszClassName = L"WndClass";
+    wndclass.lpfnWndProc   = WndProc;
+    wndclass.hInstance     = hInst;
+    wndclass.hCursor       = NULL;
+    wndclass.hIcon         = NULL;
+    wndclass.hIconSm       = NULL;
+    wndclass.hbrBackground = GetStockObject(DKGRAY_BRUSH);
+    wndclass.lpszMenuName  = NULL;
+    wndclass.style         = CS_HREDRAW | CS_VREDRAW | CS_PARENTDC;
+    wndclass.cbClsExtra    = 0;
+    wndclass.cbWndExtra    = 0;
+    wndclass.cbSize        = sizeof (wndclass);
 
-    if (!RegisterClassExW(&wcx)) {
+    if (!RegisterClassExW(&wndclass)) {
         MessageBoxW(NULL,
                     L"Failed to register window class.",
                     NULL,
