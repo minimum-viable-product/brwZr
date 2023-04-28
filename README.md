@@ -22,3 +22,8 @@ Reference:
 * [HTML 2.0 - RFC 1866](https://www.rfc-editor.org/rfc/rfc1866.html)
 * [Web Browser Engineering](https://browser.engineering/)
 * [Web Platform Tests](https://web-platform-tests.org/)
+
+Libraries:
+
+* [Apache Serf](https://serf.apache.org/)
+* [LibreSSL](https://www.libressl.org/)
