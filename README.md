@@ -27,3 +27,5 @@ Libraries:
 
 * [Apache Serf](https://serf.apache.org/)
 * [LibreSSL](https://www.libressl.org/)
+* [cURL](https://curl.se/)
+* [HTTP/FTP client Libraries for C/C++](https://curl.se/libcurl/competitors.html)
