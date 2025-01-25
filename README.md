@@ -31,4 +31,6 @@ Libraries:
 * [cURL](https://curl.se/)
 * [HTTP/FTP client Libraries for C/C++](https://curl.se/libcurl/competitors.html)
 * [WebKit](https://webkit.org/)
-* [SpiderMonkey](https://spidermonkey.dev/)
+* JS
+  - [SpiderMonkey](https://spidermonkey.dev/)
+  - [ChakraCore](https://github.com/chakra-core/ChakraCore)
