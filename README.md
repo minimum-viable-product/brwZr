@@ -31,6 +31,4 @@ Libraries:
 * [cURL](https://curl.se/)
 * [HTTP/FTP client Libraries for C/C++](https://curl.se/libcurl/competitors.html)
 * [WebKit](https://webkit.org/)
-* JS
-  - [SpiderMonkey](https://spidermonkey.dev/)
-  - [ChakraCore](https://github.com/chakra-core/ChakraCore)
+* [ChakraCore](https://github.com/chakra-core/ChakraCore) - ie js engine
