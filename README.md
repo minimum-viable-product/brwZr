@@ -23,6 +23,7 @@ Reference:
 * [HTML 2.0 - RFC 1866](https://www.rfc-editor.org/rfc/rfc1866.html)
 * [Web Browser Engineering](https://browser.engineering/)
 * [Web Platform Tests](https://web-platform-tests.org/)
+* [Hypertext Transfer Protocol -- HTTP/1.0](https://www.w3.org/Protocols/HTTP/1.0/spec.html)
 
 Libraries:
 
