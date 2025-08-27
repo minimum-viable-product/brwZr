@@ -24,6 +24,7 @@ Reference:
 * [Web Browser Engineering](https://browser.engineering/)
 * [Web Platform Tests](https://web-platform-tests.org/)
 * [Hypertext Transfer Protocol -- HTTP/1.0](https://www.w3.org/Protocols/HTTP/1.0/spec.html)
+* [Hypertext Transfer Protocol -- HTTP/1.1](https://www.rfc-editor.org/rfc/rfc2616)
 
 Libraries:
 
