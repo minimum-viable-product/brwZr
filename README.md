@@ -20,11 +20,12 @@ Reference:
 * [Browser from Scratch: HTML parsing](https://zerox-dg.github.io/blog/2020/10/24/Browser-from-Scratch-HTML-parsing/)
 * [html.parser — Simple HTML and XHTML parser](https://docs.python.org/3/library/html.parser.html) - python 3 docs
 * [Parsing HTML documents - HTML standard](https://html.spec.whatwg.org/multipage/parsing.html#parsing) - whatwg
-* [HTML 2.0 - RFC 1866](https://www.rfc-editor.org/rfc/rfc1866.html)
+* [HTML 2.0](https://www.rfc-editor.org/rfc/rfc1866.html) - RFC 1866
 * [Web Browser Engineering](https://browser.engineering/)
 * [Web Platform Tests](https://web-platform-tests.org/)
 * [Hypertext Transfer Protocol -- HTTP/1.0](https://www.w3.org/Protocols/HTTP/1.0/spec.html)
-* [Hypertext Transfer Protocol -- HTTP/1.1](https://www.rfc-editor.org/rfc/rfc2616)
+* [Hypertext Transfer Protocol -- HTTP/1.1](https://www.rfc-editor.org/rfc/rfc2616) - RFC 2616
+* [HTTP Over TLS](https://www.rfc-editor.org/rfc/rfc2818.txt) - RFC 2818
 
 Libraries:
 
