@@ -26,6 +26,8 @@ Reference:
 * [Hypertext Transfer Protocol -- HTTP/1.0](https://www.w3.org/Protocols/HTTP/1.0/spec.html)
 * [Hypertext Transfer Protocol -- HTTP/1.1](https://www.rfc-editor.org/rfc/rfc2616) - RFC 2616
 * [HTTP Over TLS](https://www.rfc-editor.org/rfc/rfc2818.txt) - RFC 2818
+  - [Recommendations for Secure Use of TLS & DTLS](https://www.rfc-editor.org/rfc/rfc7525.txt) - RFC 7525
+  - [TLS Protocol v1.2](https://www.rfc-editor.org/rfc/rfc5246.txt) - RFC 5246
 
 Libraries:
 
